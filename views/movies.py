@@ -46,7 +46,6 @@ class MovieView(Resource):
         movie = Movie.query.get(id)
         req_json = request.json
 
-        movie.id = req_json.get['id']
         movie.title = req_json.get['title']
         movie.description = req_json.get['description']
         movie.trailer = req_json.get['trailer']
